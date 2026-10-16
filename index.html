@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>PetShop - Agendamento</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Importando a biblioteca do Supabase direto pelo navegador -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+  <header>
+    <h1>🐾 PetShop Fofinho</h1>
+    <p>O melhor cuidado para o seu melhor amigo</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Área do Cliente (Agendar)</a> | 
+    <a href="admin.html">Área Administrativa</a>
+  </nav>
+
+  <div class="container">
+    <h2>Faça seu Agendamento</h2>
+    <form id="formAgendamento" onsubmit="realizarAgendamento(event)">
+      <div class="form-group">
+        <label for="clienteNome">Seu Nome:</label>
+        <input type="text" id="clienteNome" required placeholder="Ex: Maria Silva">
+      </div>
+
+      <div class="form-group">
+        <label for="petNome">Nome do Pet:</label>
+        <input type="text" id="petNome" required placeholder="Ex: Totó">
+      </div>
+
+      <div class="form-group">
+        <label for="servicoSelect">Serviço:</label>
+        <select id="servicoSelect" required>
+          <option value="">Carregando serviços...</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="dataHora">Data e Hora:</label>
+        <input type="datetime-local" id="dataHora" required>
+      </div>
+
+      <button type="submit">Confirmar Agendamento</button>
+    </form>
+  </div>
+
+  <!-- Conectando nosso script principal -->
+  <script src="main.js"></script>
+</body>
+</html>

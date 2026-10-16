@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>PetShop - Painel Administrativo</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Importando a biblioteca do Supabase -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+  <header>
+    <h1>⚙️ Painel Administrativo</h1>
+    <p>Gerenciamento do PetShop</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Área do Cliente (Agendar)</a> | 
+    <a href="admin.html">Área Administrativa</a>
+  </nav>
+
+  <div class="container">
+    <h2>Cadastrar Novo Serviço</h2>
+    <form id="formServico" onsubmit="cadastrarServico(event)">
+      <div class="form-group">
+        <label for="nomeServico">Nome do Serviço:</label>
+        <input type="text" id="nomeServico" required placeholder="Ex: Banho e Tosa Completa">
+      </div>
+
+      <div class="form-group">
+        <label for="precoServico">Preço (R$):</label>
+        <input type="number" step="0.01" id="precoServico" required placeholder="Ex: 50.00">
+      </div>
+
+      <button type="submit">Salvar Serviço</button>
+    </form>
+  </div>
+
+  <!-- Conectando nosso script principal -->
+  <script src="main.js"></script>
+</body>
+</html>
