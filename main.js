@@ -1,5 +1,5 @@
 // ATENÇÃO: Substitua pelos dados reais que você pegou no painel do Supabase!
-const SUPABASE_URL = 'https://rrxqxtmzzdkjlghtyguu';
+const SUPABASE_URL = 'https://rrxqxtmzzdkjlghtyguu.supabase.co/rest/v1/';
 const SUPABASE_ANON_KEY = 'sb_publishable_O18cGt9mBbgxUfhTAZFNIw_pzn7CcO7';
 
 // Inicializa a conexão com o Supabase
