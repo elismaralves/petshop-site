@@ -1,6 +1,9 @@
 // ATENÇÃO: Substitua pelos dados reais que você pegou no painel do Supabase!
-const SUPABASE_URL = 'https://rrxqxtmzzdkjlghtyguu.supabase.co';
-const SUPABASE_ANON_KEY = 'sb_publishable_O18cGt9mBbgxUfhTAZFNIw_pzn7CcO7';
+//process.env.NEXT_PUBLIC_SUPABASE_URL e process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY.
+
+const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL;
+const SUPABASE_ANON_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+
 
 // Inicializa a conexão com o Supabase
 const supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
